@@ -51,7 +51,7 @@
         (c = function () {
           output.innerText = moment()
             .zone(timeOffset)
-            .format(urlParams["format"] || "");
+            .format(urlParams["format"] || "") + " " +timezone;
         }),
         1000
       );
